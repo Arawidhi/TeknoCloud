@@ -1,2 +1,2 @@
-# Praktikum01
+i# Praktikum01
 Isinya tugas minggu pertama
