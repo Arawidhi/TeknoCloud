@@ -1,5 +1,5 @@
 # TeknoCloud
-Isinya tugas minggu pertama
+Isinya tugas tugas
 
 Masih awal
 
