@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Tampil Mahasiswa - UTDI</title>
+</head>
+<body>
+    <h2>Data Mahasiswa</h2>
+    <p>{[.Pesan}}</p>
+    <a href="/?aksi=tambah"><button>Tambah</button></a>
+    <table border="1" cellpadding="3" cellspacing="0">
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>NAMA</th>
+                <th>PROGRAM STUDI</th>
+                <th>SEMESTER</th>
+                <th>AKSI</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $key, $value : = .Data}}
+            <tr>
+                <td>{{$value.NIM}}</td>
+                <td>{{$value.NAMA}}</td>
+                <td>{{$value.PRODI}}</td>
+                <td>{{$value.SMT}}</td>
+                <td>
+                    <a href="/?aksi=ubah&nim={{$value.NIM}}">Ubah</a>
+                    <a href="/?aksi=hapus&nim={{$value.NIM}}">Hapus</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

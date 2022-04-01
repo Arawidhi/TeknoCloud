@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ubah Mahasiswa - UTDI</title>
+</head>
+<body>
+    <h2>UBAH MAHASISWA</h2>
+    <a href="/">Batal</a>
+    <hr>
+    <form method="POST" action="/ubah">
+        <label>NIM : <br>
+            <input type="text" name="nim" value="{{ (index .Data 0).NIM}}"readonly="readonly">
+        </label>
+        <label>NAMA : <br>
+            <input type="text" name="nama" value="{{ (index .Data 0).NAMA}}">
+        </label>
+        <label>PROGRAM STUDI : <br>
+            <input type="text" name="progdi" value="{{ (index .Data 0).PROGDI}}">
+        </label>
+        <label>SEMESTER : <br>
+            <input type="number" name="smt" value="{{ (index .Data 0).SMT}}">
+        </label>
+        <br>
+        <input type="submit" value="Ubah"/>
+    </form>
+</body>
+</html>
